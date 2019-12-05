@@ -1,0 +1,7 @@
+CREATE TABLE `membergrade` (
+  `Id` int(11) NOT NULL auto_increment,
+  `membergrade_type` varchar(50) default NULL,
+  `membergrade_minjifen` varchar(50) default NULL,
+  `membergrade_maxjifen` varchar(50) default NULL,
+  PRIMARY KEY  (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;

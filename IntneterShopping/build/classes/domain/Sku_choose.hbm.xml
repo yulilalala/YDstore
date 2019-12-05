@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Sku_choose" table="sku_choose">
+		<id name="sku_choose_id" column="sku_choose_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="sku_id"/>
+		<property name="vattribute_value"/>
+		<property name="nattribute_id"/>
+	</class>
+</hibernate-mapping>

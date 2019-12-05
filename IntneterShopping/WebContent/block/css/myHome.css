@@ -1,0 +1,144 @@
+h1,a,ul,li{
+	margin: 0;
+	padding: 0;
+}
+a:hover{
+	color: #df3028;
+}
+
+.h-left{
+	overflow: hidden;
+}
+/*右侧主*/
+.zy-main{
+	padding-left: 190px;
+}
+.zy-title{
+	width: 421px;
+    height: 150px;
+    /*float: left;*/
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    background: #FFF;
+}
+.zy-head{
+	margin: 30px 0 0 20px;
+	width: 93px;
+	height: 80px;
+	float: left;
+}
+.zy-head img{
+    border: 3px solid #e6e6e6;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    width: 88px;
+    height: 88px;
+    vertical-align: middle;
+}
+.zy-block{
+	float: left;
+    width: auto;
+    padding: 28px 0 0 10px;
+}
+.user-name{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 100px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    padding-top: 20px;
+}
+.address{
+	margin-top: 20px;
+}
+.address a{
+	display: inline-block;
+	font-size: 14px;
+}
+.zy-order{
+	margin-top: 10px;
+	background-color: #fff;
+	width: 72%;
+}
+.zy-h{
+	padding: 0 0 0 20px;
+	
+	font-size: 16px;
+	border-bottom: 1px solid #f0f3ef;
+	height: 40px;
+}
+.zy-h h3{
+	line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+}
+.zy-mc{
+	/*margin: 15px 20px;*/
+	height: 150px;
+}
+.zy-mc .nav .item{
+	width: 90px;
+}
+.nav .item{
+	float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 13px 0 0;
+    margin: 0 20px;
+    width: 120px;
+    height: 90px;
+    text-align: center;
+    color: #333;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.nav a{
+	display: inline-block;
+}
+.icon-sprite{
+	background: url(../image/sprites.png) no-repeat 0 0;
+	position: relative;
+    display: block;
+}
+.item1 .icon-sprite{
+	margin: 3px auto;
+    width: 44px;
+    height: 35px;
+    background-position: 0 -200px;
+}
+.item2 .icon-sprite{
+	margin: 3px auto;
+    width: 40px;
+    height: 38px;
+    background-position: -80px -200px;
+}  
+.item3 .icon-sprite{
+	margin: 3px auto;
+    width: 41px;
+    height: 38px;
+    background-position: -160px -200px;
+}
+.item4 .icon-sprite{
+	margin: 3px auto;
+    width: 39px;
+    height: 41px;
+    background-position: -240px -200px;
+}
+.item5 .icon-sprite{
+	margin: 3px auto;
+    width: 41px;
+    height: 41px;
+    background-position: -320px -200px;
+}
+.nav{
+	padding: 20px 30px;
+	height: 80px;
+	border-bottom: 1px solid #f0f3ef;
+} 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.User" table="users">
+		<id name="user_id" column="user_id">
+			<generator class="native"/>
+		</id>
+		<property name="user_password"/>
+		<property name="user_name"/>
+		<property name="user_nickname"/>
+		<property name="user_types"/>
+		<property name="user_sex"/>
+		<property name="user_address"/>
+		<property name="user_phone"/>
+		<property name="user_regdate"/>
+		<one-to-one name="member" class="domain.Member" property-ref="user"></one-to-one>
+		<set name="orders">
+			<key column="user_id"></key>
+			<one-to-many class="domain.Order"/>
+		</set>
+		<one-to-one name="order_cart" class="domain.Order_cart" property-ref="user"></one-to-one>
+	</class>
+</hibernate-mapping>

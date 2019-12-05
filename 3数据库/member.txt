@@ -1,0 +1,11 @@
+CREATE TABLE `member` (
+  `member_id` int(11) NOT NULL default '0',
+  `menber_name` varchar(20) NOT NULL default '',
+  `member_sex` bit(1) default NULL,
+  `member_address` varchar(100) NOT NULL default '',
+  `member_phone` varchar(20) NOT NULL default '',
+  `member_Email` varchar(50) default NULL,
+  `member_RegDate` datetime NOT NULL default '0000-00-00 00:00:00',
+  `member_jifen` varchar(50) default NULL,
+  PRIMARY KEY  (`member_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

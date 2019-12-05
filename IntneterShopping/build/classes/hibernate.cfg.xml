@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.cj.jdbc.Driver
+		</property>
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3306/shopping?useSSL=false
+		</property>
+		<property name="hibernate.connection.username">
+			root
+		</property>
+		<property name="hibernate.connection.password">
+			root
+		</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		<!-- 取消Bean校验 -->
+		<property name="javax.persistence.validation.mode">none</property>
+		<!-- 整合c3p0 -->
+		<property name="hibernate.connection.provider_class">
+			org.hibernate.connection.C3P0ConnectionProvider
+		</property>
+		<mapping resource="domain/Vattribute.hbm.xml"></mapping>
+		<mapping resource="domain/Nattribute.hbm.xml"></mapping>
+		<mapping resource="domain/Classification.hbm.xml"></mapping>
+		<mapping resource="domain/Specification_group.hbm.xml"></mapping>
+		<mapping resource="domain/Specification_options.hbm.xml"></mapping>
+		<mapping resource="domain/Specification.hbm.xml"></mapping>
+		<mapping resource="domain/Spu.hbm.xml"></mapping>
+		<mapping resource="domain/Sku.hbm.xml"></mapping>
+		<mapping resource="domain/Brand.hbm.xml"></mapping>
+		<mapping resource="domain/Shop.hbm.xml"></mapping>
+		<mapping resource="domain/Picture.hbm.xml"></mapping>
+		<mapping resource="domain/User.hbm.xml"></mapping>
+		<mapping resource="domain/Member.hbm.xml"></mapping>
+		<mapping resource="domain/Order_cart.hbm.xml"></mapping>
+		<mapping resource="domain/Order_product.hbm.xml"></mapping>
+		<mapping resource="domain/Order.hbm.xml"></mapping>
+		<!-- 
+		
+		
+		
+		
+	
+		
+		
+		<mapping resource="domain/Sku_choose.hbm.xml"></mapping>
+		
+		
+		
+		<mapping resource="domain/Details.hbm.xml"></mapping>
+		<mapping resource="domain/Sku_picture.hbm.xml"></mapping>
+		<mapping resource="domain/Spu_options.hbm.xml"></mapping>
+		
+		
+		<mapping resource="domain/Curelation.hbm.xml"></mapping>
+		<mapping resource="domain/Guarantee.hbm.xml"></mapping>
+		 -->
+	</session-factory>
+</hibernate-configuration>

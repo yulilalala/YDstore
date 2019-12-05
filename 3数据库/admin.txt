@@ -1,0 +1,5 @@
+CREATE TABLE `admin` (
+  `admin_Id` varchar(20) NOT NULL default '',
+  `admin_password` varchar(20) NOT NULL default '',
+  PRIMARY KEY  (`admin_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

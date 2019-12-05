@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Specification" table="specification">
+		<id name="specification_id" column="specification_id">
+			<generator class="native"/>
+		</id>
+		<property name="specification_name"/>
+		<many-to-one name="specification_options" column="specification_options_id" class="domain.Specification_options"></many-to-one>
+		<set name="spus" table="spu_options">
+			<key column="specification_id"></key>
+			<many-to-many class="domain.Spu" column="spu_id"></many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

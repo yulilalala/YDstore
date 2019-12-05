@@ -1,0 +1,6 @@
+CREATE TABLE `jifenlrules` (
+  `Id` int(11) NOT NULL auto_increment,
+  `jifenrules_money` int(11) default NULL,
+  `jifenrules_type` int(11) default NULL,
+  PRIMARY KEY  (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;

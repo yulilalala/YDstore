@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 配置sku相关的动作 -->
+	<package name="sku" extends="myDefault" namespace="/sku">
+		<action name="skuAction_*" class="skuAction" method="{1}">
+			<result name="findById" type="json"><param name="root">result</param></result>
+			<result name="findAll" type="json"><param name="root">result</param></result>
+			<result name="delete"  type="json"><param name="root">jsonObject</param></result>
+			<result name="update" type="json"><param name="root">jsonObject</param></result>
+			<result name="save" type="json"><param name="root">jsonObject</param></result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Shop" table="shop">
+		<id name="shop_id" column="shop_id">
+			<generator class="native"/>
+		</id>
+		<property name="shop_name"/>
+		<set name="skus">
+			<key column="shop_id"></key>
+			<one-to-many class="domain.Sku"/>
+		</set>
+		<one-to-one name="order" class="domain.Order" property-ref="shop"></one-to-one>
+		<set name="order_products">
+			<key column="shop_id"></key>
+			<one-to-many class="domain.Order_product"/>
+		</set>
+		<one-to-one name="order_cart" class="domain.Order_cart" property-ref="shop"></one-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<!-- 配置和details相关的bean -->
+	<!-- 配置Action -->
+	<bean id="detailsAction" class="action.DetailsAction">
+		<property name="detailsService" ref="detailsService"></property>
+	</bean>
+	<!-- 配置dao -->
+	<bean id="detailsDao" class="dao.imple.DetailsDaoImple">
+		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	</bean>
+	<!-- 配置service -->
+	<bean id="detailsService" class="service.imple.DetailsServiceImple">
+		<property name="detailsDao" ref="detailsDao"></property>
+	</bean>
+</beans>

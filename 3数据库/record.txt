@@ -1,0 +1,9 @@
+CREATE TABLE `record` (
+  `Id` int(11) NOT NULL auto_increment,
+  `member_id` int(11) default NULL,
+  `project` varchar(50) default NULL,
+  `num` varchar(50) default NULL,
+  `inputdate` varchar(50) default NULL,
+  `goods_jifen` varchar(50) default NULL,
+  PRIMARY KEY  (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

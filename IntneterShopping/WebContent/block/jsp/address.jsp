@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="import" href="public.html">
+    <title>收货地址</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!--    normalize.css里面做css初始化 正对浏览器-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!--    base里面只写公共样式  头部和底部样式-->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/address.css" />
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/core.js"></script>
+    <script type="text/javascript" src="../js/address.js"></script>
+</head>
+
+<body>
+   <%@ include file="../dome/shortcut.jsp" %>
+    <div class="w ad-b">
+        <%@ include file="../dome/mg-menu.jsp" %>
+        <div id="main" class="w ad-ba">
+        		<div class="ma">
+            		<h3 class="address-title">地址管理</h3>
+            	</div>
+            <div id="addressList" class="mod-main mod-comm">
+            	
+                <div class="mt">
+                    <a id="edit-add-dialog" onclick="alertAddAddressDiag()" class="e-btn add-btn btn-5" href="javascript:;">新增收货地址</a>
+                    <span class="ftx-03">您已创建<span id="addressNum_top" class="ftx-02">1 </span>个收货地址，最多可创建<span class="ftx-02">20</span>个</span>
+                </div>
+                <div class="mc">
+                    <div class="sm easebuy-m " id="addresssDiv-848930740">
+                        <div class="smt">
+                            <h3>
+                                郭鹏程
+                                <!-- 旧地址不可编辑别名 -->
+                                <a onclick="modifyAliasTipsByoverseas(848930740,event,0);" id="alias-edit-848930740" class="alias-edit" href="javascript:;"></a>
+                                <span class="ftx-04 ml10">默认地址</span>
+
+
+                                <!-- 地址服务升级  begin -->
+
+                                <input type="hidden" id="hid_upArea_848930740" addressid="848930740" isoldaddress="false" ismapping="false" newprovinceid="0" newcityid="0" newcountyid="0" newtownid="0" newprovincename="" newcityname="" newcountyname="" newtownname="">
+
+                                <!-- 地址服务升级  end -->
+
+                            </h3>
+                            <div class="extra">
+                                <a onclick="alertDelAddressDiag(848930740);" class="del-btn" href="#none">删除</a>
+                            </div>
+                            <div id="alias-form-848930740" class="alias-form hide">
+                                <div class="alias-new">
+                                    <input type="text" class="ipt-text" id="ipt-text-848930740" value="郭鹏程" onblur="checkConsigneeAlias('ipt-text-848930740')" maxlength="20">
+                                    <button type="button" class="btn-save" onclick="saveAddessAlias(848930740,event)">保存</button>
+                                </div>
+                                <div class="alias-common">
+                                    <div class="ac-tip">建议填写常用名称：</div>
+                                    <div class="ac-con">
+                                        <a href="javascript:setAddressAilas(848930740,'home-848930740');" id="home-848930740" class="item">家里</a>
+                                        <a href="javascript:setAddressAilas(848930740,'parentHome-848930740');" id="parentHome-848930740" class="item">父母家</a>
+                                        <a href="javascript:setAddressAilas(848930740,'company-848930740');" id="company-848930740" class="item">公司</a>
+                                    </div>
+                                    <span class="error-msg" id="error_ipt-text-848930740"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="smc">
+                            <div class="items new-items">
+                                <div class="item-lcol">
+                                    <div class="item">
+                                        <span class="label">收货人：</span>
+                                        <div class="fl">
+                                            郭鹏程 </div>
+                                        <div class="clr"></div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="label">所在地区：</span>
+                                        <div class="fl">
+                                            江西萍乡市安源区城郊管委会
+                                        </div>
+                                        <div class="clr"></div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="label">地址：</span>
+                                        <div class="fl">
+                                            萍安北大道211萍乡学院 </div>
+                                        <div class="clr"></div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="label">手机：</span>
+                                        <div class="fl">
+                                            187****0015 </div>
+                                        <div class="clr"></div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="label">固定电话：</span>
+                                        <div class="fl">
+                                        </div>
+                                        <div class="clr"></div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="label">电子邮箱：</span>
+                                        <div class="fl">
+                                        </div>
+                                        <div class="clr"></div>
+                                    </div>
+                                </div>
+
+                                <div class="item-rcol">
+                                    <div class="extra">
+                                        <a class="ml10 ftx-05" href="javascript:getPaymentByoverseas(848930740,0,0,0);">使用一键购</a>
+                                        <a class="ml10 ftx-05" href="javascript:;" onclick="alertUpdateAddressDiagByoverseas(848930740,0);">编辑</a>
+                                    </div>
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            	<div class="mt">
+                    <a id="edit-add-dialog" onclick="alertAddAddressDiag()" class="e-btn add-btn btn-5" href="javascript:;">新增收货地址</a>
+                    <span class="ftx-03">您已创建<span id="addressNum_top" class="ftx-02">1 </span>个收货地址，最多可创建<span class="ftx-02">20</span>个</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%@ include file="../dome/copyright.jsp" %>
+</body>
+
+</html>

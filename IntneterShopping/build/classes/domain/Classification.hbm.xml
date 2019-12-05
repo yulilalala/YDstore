@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Classification" table="classification">
+		<id name="classification_id" column="classification_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="classification_name" type="string" not-null="true"></property>
+		<property name="fclassification_id" type="integer"></property>
+		<set name="nattributes">
+			<key column="classification_id"></key>
+			<one-to-many class="domain.Nattribute"/>
+		</set>
+		<set name="specification_groups">
+			<key column="classification_id"></key>
+			<one-to-many class="domain.Specification_group"/>
+		</set>
+		<set name="spus">
+			<key column="classification_id"></key>
+			<one-to-many class="domain.Spu"/>
+		</set>
+	</class>
+</hibernate-mapping>

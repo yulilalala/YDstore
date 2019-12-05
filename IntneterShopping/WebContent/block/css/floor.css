@@ -1,0 +1,142 @@
+/*带tab栏的楼层*/
+.title h5 {
+    height: 37px;
+    line-height: 37px;
+    font-size: 18px;
+    font-weight: 300;
+    border-bottom: 1px solid #333;
+    margin-left: 15px;
+}
+/*生活家電*/
+.new-tab .left-info {
+    float: left;
+    width: 238px;
+    height: 580px;
+    background: #6996fc;
+    border-top: 2px solid #3664db;
+}
+.new-tab .left-info .top a {
+    display: block;
+}
+.new-tab .left-info .bot ul .first {
+    position: relative;
+    margin: 11px 0 8px 18px;
+}
+.new-tab .left-info .bot ul li {
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+.new-tab .left-info .bot ul .first em {
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 14px;
+    left: -8px;
+    top: 5px;
+    background: #fff;
+}
+.new-tab .left-info .bot ul .first p {
+    height: 22px;
+    color: #fff;
+    font: 16px/22px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+.new-tab .left-info .bot ul li a {
+    display: block;
+    width: 210px;
+    height: 17px;
+    color: #fff;
+    font: 12px/17px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.new-tab .pro-tab {
+    position: relative;
+    float: left;
+    width: 952px;
+    height: 580px;
+    background: #f2f2f2;
+    border-top: 2px solid #3664db;
+}
+.new-tab .pro-tab .tab-nav4 {
+    margin-bottom: 1px;
+}
+
+.new-tab .pro-tab .tab-nav4 ul li {
+    float: left;
+    height: 36px;
+    background: #fff;
+}
+.new-tab .pro-tab .tab-nav4 ul .cur {
+    background: #e9edf7;
+}
+.new-tab .pro-tab .tab-nav4 ul li p {
+    display: block;
+    width: 190px;
+    color: #333;
+    text-align: center;
+    font: 14px/36px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+.new-tab .pro-tab .tab-nav4 .cur p{
+	color: #3664db;
+}
+.tab-content-wrap {
+    position: relative;
+}
+.new-tab .pro-tab .tab-content4 {
+    height: 542px;
+    overflow: hidden;
+}
+.new-tab .pro-tab .tab-content4 ul {
+    margin-right: -10px;
+}
+.new-tab .pro-tab .tab-content4 ul li {
+    position: relative;
+    float: left;
+    width: 238px;
+    height: 272px;
+    margin: 0 1px 1px 0;
+    background: #fff;
+}
+.new-tab .pro-tab .tab-content4 ul .img-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.new-tab .pro-tab .tab-content4 ul li img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 10px 37px 10px 41px;
+}
+.new-tab .pro-tab .tab-content4 ul li .name {
+    width: 206px;
+    height: 40px;
+    font: 14px/20px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+    margin-left: 20px;
+    margin-bottom: 3px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.new-tab .pro-tab .tab-content4 ul li .desc {
+    width: 206px;
+    height: 17px;
+    color: #3664db;
+    font: 12px/17px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+    margin-left: 20px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.new-tab .pro-tab .tab-content4 ul li .price {
+    color: #f40;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.new-tab .pro-tab .tab-content4 ul li .price span {
+    font-size: 16px;
+}

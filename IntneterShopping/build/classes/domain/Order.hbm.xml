@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.Order" table="orders">
+        <id name="order_id">
+            <column name="order_id" />
+            <generator class="native" />
+        </id>
+        <property name="order_dates" >
+            <column name="order_dates" />
+        </property>
+        <property name="pay_date" >
+            <column name="pay_date" />
+        </property>
+        <property name="condition">
+            <column name="conditions" />
+        </property>
+        <property name="freight">
+            <column name="freights" />
+        </property>
+        <property name="order_totalmoney">
+            <column name="order_totalmoney" />
+        </property>
+        <property name="guarantee_money">
+            <column name="guarantee_money" />
+        </property>
+        <many-to-one name="user" class="domain.User" column="user_id"></many-to-one>
+        <many-to-one name="shop" class="domain.Shop" column="shop_id"></many-to-one>
+        <set name="order_products">
+        	<key column="order_id"></key>
+        	<one-to-many class="domain.Order_product"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,5 @@
+CREATE TABLE `orderdetail` (
+  `order_id` int(11) NOT NULL auto_increment,
+  `goods_id` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`order_id`,`goods_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

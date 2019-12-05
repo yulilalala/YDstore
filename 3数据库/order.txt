@@ -1,0 +1,7 @@
+CREATE TABLE `order` (
+  `order_id` int(11) NOT NULL auto_increment,
+  `member_id` varchar(20) NOT NULL default '',
+  `totalmoney` varchar(20) default NULL,
+  `order_date` datetime default NULL,
+  PRIMARY KEY  (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

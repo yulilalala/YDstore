@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Spu" table="spu">
+		<id name="spu_id" column="spu_id">
+			<generator class="native"/>
+		</id>
+		<property name="spu_name"/>
+		<property name="spu_details"/>
+		<many-to-one name="classification" class="domain.Classification" column="classification_id"></many-to-one>
+		<many-to-one name="brand" class="domain.Brand" column="brand_id"></many-to-one>
+		<set name="specifications" table="spu_options">
+			<key column="spu_id"></key>
+			<many-to-many class="domain.Specification" column="specification_id"></many-to-many>
+		</set>
+		<set name="skus">
+			<key column="spu_id"></key>
+			<one-to-many class="domain.Sku"/>
+		</set>
+		<set name="pictures">
+			<key column="spu_id"></key>
+			<one-to-many class="domain.Picture"/>
+		</set>
+		<one-to-one name="order_product" class="domain.Order_product" property-ref="spu"/>
+		<one-to-one name="order_cart" class="domain.Order_cart" property-ref="spu"/>
+	</class>
+</hibernate-mapping>

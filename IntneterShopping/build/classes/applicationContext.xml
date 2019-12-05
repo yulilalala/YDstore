@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<import resource="applicationContext-jdbc.xml"></import><!-- 引入JDBC配置 -->
+	<import resource="applicationContext-tx.xml"></import><!-- 引入事务管理配置 -->
+	<import resource="applicationContext-user.xml"></import><!-- 引入user配置 -->
+	<import resource="applicationContext-member.xml"></import><!-- 引入member配置 -->
+	<import resource="applicationContext-sku.xml"></import><!-- 引入sku配置 -->
+	<import resource="applicationContext-brand.xml"></import><!-- 引入brand配置 -->
+	<import resource="applicationContext-spu.xml"></import><!-- 引入spu配置 -->
+	<import resource="applicationContext-classification.xml"></import><!-- 引入classification配置 -->
+	<import resource="applicationContext-shop.xml"></import><!-- 引入shop配置 -->
+	<import resource="applicationContext-nattribute.xml"></import><!-- 引入nattribute配置 -->
+	<import resource="applicationContext-sku_choose.xml"></import><!-- 引入sku_choose配置 -->
+	<import resource="applicationContext-specification_group.xml"></import><!-- 引入specification_group配置 -->
+	<import resource="applicationContext-specification_options.xml"></import><!-- 引入specification_options配置 -->
+	<import resource="applicationContext-picture.xml"></import><!-- 引入picture配置 -->
+	<import resource="applicationContext-details.xml"></import><!-- 引入details配置 -->
+	<import resource="applicationContext-sku_picture.xml"></import><!-- 引入sku_picture配置 -->
+	<import resource="applicationContext-specification.xml"></import><!-- 引入specification配置 -->
+	<import resource="applicationContext-vattribute.xml"></import><!-- 引入vattribute配置 -->
+	<import resource="applicationContext-curelation.xml"></import><!-- 引入curelation配置 -->
+	<import resource="applicationContext-guarantee.xml"></import><!-- 引入guarantee配置 -->
+</beans>

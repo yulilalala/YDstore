@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Sku" table="sku">
+		<id name="sku_id" column="sku_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="sku_name"></property>
+		<property name="cprice"></property>
+		<property name="stock"></property>
+		<property name="release_time"></property>
+		<property name="main"></property>
+		<many-to-one name="spu" class="domain.Spu" column="spu_id"></many-to-one>
+		<many-to-one name="shop" class="domain.Shop" column="shop_id"></many-to-one>
+		<set name="pictures" table="sku_picture">
+			<key column="sku_id"></key>
+			<many-to-many class="domain.Picture" column="picture_id"></many-to-many>
+		</set>
+		<set name="vattributes" table="sku_choose">
+			<key column="sku_id"></key>
+			<many-to-many class="domain.Vattribute" column="vattribute_id"></many-to-many>
+		</set>
+		<one-to-one name="order_product" class="domain.Order_product" property-ref="sku"/>
+		<one-to-one name="order_cart" class="domain.Order_cart" property-ref="sku"></one-to-one>
+	</class>
+</hibernate-mapping>

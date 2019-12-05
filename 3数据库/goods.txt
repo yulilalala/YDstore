@@ -1,0 +1,11 @@
+CREATE TABLE `goods` (
+  `goods_Id` int(11) NOT NULL auto_increment,
+  `goods_name` varchar(50) default '',
+  `goodstype_id` int(11) NOT NULL default '0',
+  `goods_mess` varchar(255) default NULL,
+  `goods_price` float(4,0) default NULL,
+  `goods_image` varchar(50) default NULL,
+  `goods_sellcount` int(11) default NULL,
+  `goods_date` datetime default NULL,
+  PRIMARY KEY  (`goods_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

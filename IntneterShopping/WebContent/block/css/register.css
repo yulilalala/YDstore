@@ -1,0 +1,112 @@
+body, button, input, select, textarea {
+    font: 12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+    -webkit-font-smoothing: antialiased;
+}
+.register_header {
+	height: 100px;
+	/*background-color: pink;*/
+	position: relative;
+	border-bottom: 1px solid red;
+}
+
+.register_text {
+	float: left;
+	font-size: 18px;
+	color: #666;
+	line-height: 100px;
+	margin-left: 250px;
+}
+
+.register_header a {
+	position: absolute;
+	color: #333;
+	right: 0;
+	bottom: 5px;
+}
+
+.register_header a:hover {
+	color: #f60;
+}
+
+.register_mid {
+	background-color: white;
+	height: auto;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-top: 4px solid #f60;
+	padding: 55px 0;
+}
+
+.phone_form {
+	width: 380px;
+	margin: 0 auto;
+}
+
+
+/*phone注册边框样式*/
+
+.phone_re_bo {}
+
+.input_box {
+	height: 40px;
+	margin-bottom: 25px;
+	border: 1px solid #ccc;
+}
+
+/*描述信息*/
+.des_text {
+	position: relative;
+	float: left;
+	font-size: 12px;
+	line-height: 40px;
+	margin: 0 10px;
+}
+
+.input_box input {
+	/*去除边框的默认样式*/
+	outline: none;
+	/*background-color: #CE3150;*/
+	height: 40px;
+	font-size: 12px;
+}
+.form_yzm input{
+	float: left;
+}
+.yzm_re{
+	float: left;
+    width: 148px;
+    height: 100%;
+    line-height: 38px;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    margin: -1px -1px 0 18px;
+    text-decoration: none;
+}
+.hide{
+	display: none;
+}
+.submit_btn{
+	display: block;
+	width: 100%;
+    line-height: 40px;
+    background: #f60;
+    font-size: 20px;
+    color: #fff;
+    margin: 24px 0 5px;
+    text-align: center;
+}
+/*协议部分*/
+.phone_form .items {
+    color: #666;
+}
+.items .accept-items {
+    float: left;
+    margin: 4px 5px 0 0;
+    *margin: 0;
+}
+.items a {
+    color: #222;
+    font-size: 12px;
+}

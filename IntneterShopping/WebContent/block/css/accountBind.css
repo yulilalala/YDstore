@@ -1,0 +1,62 @@
+h3{
+	margin: 0;
+	padding: 0;
+}
+.ab-main{;
+	position: relative;
+    margin: 0 0 30px 170px;
+    padding-top: 1px;
+    width: 820px;
+}
+.ma{
+	position: relative;
+    margin: 15px 0 0 0;
+	/*background-color: pink;*/
+}
+.ab-title{
+	font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    padding: 10px 12px;
+    background-color: #fafafa;
+}
+.ab-com{
+    padding-top: 20px;
+	background-color: #fff;
+}
+.ab-mc{
+	height: 548px;
+}
+.content {
+    width: 790px;
+    margin: auto 15px 10px;
+    border: 1px solid #eee;
+}
+.n-bind-title {
+    background-color: #f5f5f5;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+}
+.n-bind-title .gw {
+    width: 110px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.n-bind-title .status {
+    color: #f70;
+}
+.n-bind-title a {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    width: 30px;
+}
+.n-bind-title a {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    width: 30px;
+}

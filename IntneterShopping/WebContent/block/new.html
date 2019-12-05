@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>aa</title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+			<!--<script>
+		$(function(){
+					//直接使用ajax访问
+//			$.ajax({
+//				type:'get',
+//				url:'json/goodstyppe.json',
+//				dataType:'json',
+//				success:function(data){
+//					$("#div").html(data.electronics.phone);
+//					
+//				}
+//			})
+//			$('#div').html('aaa')
+//			
+//				ondd();
+			var myTag = $('<li>123</li>');
+    		$('#div').prepend(myTag);
+		})
+		</script>-->
+<script>
+$(function(){
+	//一、json的遍历
+			//1.遍历json数组
+			var json = [ {dd:'SB',AA:'东东',re1:123}, {cccc:'dd',lk:'1qw'}];
+			for(var i=0,l=json.length;i<l;i++){
+				for(var key in json[i]){
+					alert(key+':'+json[i][key]);
+				}
+			}
+			packJson = [
+				{"name":"nikita", "password":"1111"},
+				{"name":"tony", "password":"2222"}
+			
+			];
+			//2.有规律
+			for(var p in packJson){//遍历json数组时，这么写p为索引，0,1
+			   alert(packJson[p].name + " " + packJson[p].password);
+			}
+			3.
+			for(var i = 0; i < packJson.length; i++){
+			 alert(packJson[i].name + " " + packJson[i].password);
+			}
+			myJson = {"name":"caibaojian", "password":"1111"};
+		
+			for(var p in myJson){//遍历json对象的每个key/value对,p为key
+			   alert(p + " " + myJson[p]);
+			}
+			
+			var obj ={"name":"冯娟","password":"123456","department":"技术部","sex":"女","old":30};
+		//	遍历方法：
+			var str='';
+			for(var p in obj){
+				str = str+obj[p]+',';
+				alert(str) ;
+			}
+	//二、
+		//1.grep
+			var array = [1,2,3,4,5,6,7,8,9];
+		var filterarray = $.grep(array,function(value){
+		return value > 5;//筛选出大于5的
+		});
+		for(var i=0;i<filterarray.length;i++){
+		alert(filterarray[i]);
+		}
+		for (key in filterarray){
+		alert(filterarray[key]);
+		}
+		//2.each
+		var anObject = {one:1,two:2,three:3};//对json数组each
+		$.each(anObject,function(name,value) {
+		alert(name);
+		alert(value);
+		});
+		var anArray = ['one','two','three'];
+		$.each(anArray,function(n,value){
+		alert(n);
+		alert(value);
+		}
+		);
+		//3.inArray
+		var anArray = ['one','two','three'];
+		var index = $.inArray('two',anArray);
+		alert(index);//返回该值在数组中的键值，返回1
+		alert(anArray[index]);//value is two
+		//4.map
+		var strings = ['0','1','2','3','4','S','6'];
+		var values = $.map(strings,function(value){
+		var result = new Number(value);
+		return isNaN(result) ? null:result;//isNaN:is Not a Number的缩写
+		}
+		);
+		for (key in values) {
+		alert(values[key]);
+		}
+//		获取json数据
+		$.getJSON("json/test.json",function(data){ 
+	             $.each(data.users, function(index, item) {
+	            	 alert(index+":"+ item.password);
+	        	})
+	    })
+	
+})
+</script>
+	</head>
+	<body>
+		<div id="div" style="background-color: pink; width: 100px; height: 100px;"></div>
+	display:="" none;"="" data-color="#171717" data-name="OPPO K1新品预定" 
+	<h1>阿达说的分手</h1>
+	<h1>阿斯蒂芬</h1>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 开发者模式 -->
+	<constant name="struts.devMode" value="false"></constant>
+	<!-- 配置公共包，有公共的配置就写在这 -->
+	<package name="myDefault" extends="json-default" abstract="true">
+	</package>
+	<!-- 引入其他的struts配置文件 -->
+	<include file="struts-user.xml"></include>
+	<include file="struts-member.xml"></include>
+	<include file="struts-sku.xml"></include>
+	<include file="struts-brand.xml"></include>
+	<include file="struts-spu.xml"></include>
+	<include file="struts-classification.xml"></include>
+	<include file="struts-shop.xml"></include>
+	<include file="struts-nattribute.xml"></include>
+	<include file="struts-sku_choose.xml"></include>
+	<include file="struts-specification_group.xml"></include>
+	<include file="struts-specification_options.xml"></include>
+	<include file="struts-picture.xml"></include>
+	<include file="struts-details.xml"></include>
+	<include file="struts-sku_picture.xml"></include>
+	<include file="struts-spu_options.xml"></include>
+	<include file="struts-vattribute.xml"></include>
+	<include file="struts-curelation.xml"></include>
+	<include file="struts-guarantee.xml"></include>
+</struts>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 配置user相关的动作 -->
+	<package name="user" extends="myDefault" namespace="/user">
+		<action name="userAction_*" class="userAction" method="{1}">
+			<result name="delete"  type="json"><param name="root">jsonObject</param></result>
+			<result name="update" type="json"><param name="root">jsonObject</param></result>
+			<result name="save" type="json"><param name="root">jsonObject</param></result>
+			<result name="findById" type="json">
+				<param name="root">result</param>
+                <!-- result 的type是json，param的name是root，
+                 这是固定的格式，result是action的一个变量，会传到ajax的success函数，在action中要有这个变量的getter方法。 -->
+            </result>
+            <result name="findAll" type="json">
+            	<param name="root">result</param>
+            </result>
+		</action>
+	</package>
+</struts>

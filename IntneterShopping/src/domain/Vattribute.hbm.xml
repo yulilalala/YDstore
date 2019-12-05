@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Vattribute" table="vattribute">
+		<id name="vattribute_id" column="vattribute_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="vattribute_value" type="string" not-null="true"></property>
+		<many-to-one name="nattribute" class="domain.Nattribute" column="nattribute_id"/>
+		<set name="skus" table="sku_choose">
+			<key column="vattribute_id"></key>
+			<many-to-many class="domain.Sku" column="sku_id"></many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

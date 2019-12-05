@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Nattribute" table="nattribute">
+		<id name="nattribute_id" column="nattribute_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="nattribute_name" type="string" not-null="true"></property>
+		<many-to-one name="classification" column="classification_id" class="domain.Classification"></many-to-one>
+		<set name="vattributes">
+			<key column="nattribute_id"></key>
+			<one-to-many class="domain.Vattribute"/>
+		</set>
+	</class>
+</hibernate-mapping>

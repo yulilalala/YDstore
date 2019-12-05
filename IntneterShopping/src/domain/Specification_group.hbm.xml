@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Specification_group" table="specification_group">
+		<id name="specification_group_id" column="specification_group_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="specification_group_name" type="string" not-null="true"></property>
+		<many-to-one name="classification" column="classification_id" class="domain.Classification"></many-to-one>
+		<set name="specification_options">
+			<key column="specification_group_id"></key>
+			<one-to-many class="domain.Specification_options"/>
+		</set>
+	</class>
+</hibernate-mapping>

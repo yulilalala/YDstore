@@ -1,0 +1,151 @@
+.wrap-cont {
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+}
+.wrap {
+    width: 990px;
+    margin: auto;
+}
+
+.s-header{
+	height: 60px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	
+}
+.s-header span{
+	float: left;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #333;
+    /*margin-top: 34px;*/
+   text-align: center;
+   margin-left: 30px;
+}
+.top-cont {
+    padding: 30px 50px;
+    position: relative;
+    height: 100px;
+    background-color: #fff;
+}
+.icon-img {
+    width: 100px;
+    _width: 105px;
+    height: 100px;
+    _height: 105px;
+    border: 2px solid #b2b2b2;
+    border-radius: 100%;
+}
+.info-cont {
+    position: absolute;
+    top: 48px;
+    left: 164px;
+    font: 12px "宋体";
+    color: #666;
+}
+.info-cont .para-one {
+    color: #999;
+    line-height: 24px;
+    padding-bottom: 7px;
+}
+.info-cont em {
+    font: 16px ""Microsoft YaHei"";
+    color: #000;
+    padding-right: 10px;
+}
+.info-cont p, .login-info p {
+    line-height: 20px;
+}
+.info-cont span {
+    font-family: "Arail";
+    padding-right: 20px;
+    color: #333;
+}
+.color-low, .color-red {
+    color: #ff494a!important;
+}
+.min-h600 {
+    min-height: 600px;
+    height: auto!important;
+    height: 600px;
+}
+.main-wrap {
+    background-color: #fff;
+}
+.main-cont {
+    width: 900px;
+    margin: auto;
+    padding: 50px 0 45px;
+    font-family: "Microsoft YaHei";
+    position: relative;
+}
+.entryList {
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.entryList li {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 68px;
+}
+.entryList2 li {
+    padding-top: 15px;
+    padding-left: 100px;
+    height: 80px;
+}
+.entryList2 .icon-basic {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.icon-lock {
+    background-position: 0 0;
+}
+.icon-basic {
+    width: 80px;
+    height: 80px;
+    background: url(../image/tool-service-bg.png) no-repeat;
+    display: block;
+    margin: auto;
+}
+.bold {
+    font-weight: bold;
+}
+.entryList .btn-p {
+    color: #666;
+    line-height: 26px;
+    overflow: hidden;
+}
+.entry-btn {
+    display: inline-block;
+    padding: 0 20px;
+    color: #333;
+    background-color: #fff;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none!important;
+    *display: inline;
+    zoom: 1;
+}
+.icon-pen {
+    background-position: 0 -105px;
+}
+.icon-b-phone {
+    background-position: 0 -210px;
+}
+.icon-b-mail {
+    background-position: -100px 0;
+}
+.icon-b-question {
+    background-position: -100px -105px;
+}
+.icon-b-man {
+    background-position: 0 -315px;
+}

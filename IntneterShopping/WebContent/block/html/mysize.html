@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>尺码中心</title>
+		<link rel="shortcut icon" href="../favicon.ico"/>
+		<link rel="import" href="public.html"/>
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mysize.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../js/mysize.js"></script>
+	</head>
+	<body>
+		<script>
+			var link = document.querySelector('link[rel="import"]');
+			var content = link.import;
+			//     从 warning.html 的文档中获取 DOM。
+			var el = content.querySelector('.shortcut');
+			document.body.appendChild(el.cloneNode(true));
+		</script>
+		
+	</body>
+</html>

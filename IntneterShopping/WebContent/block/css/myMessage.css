@@ -1,0 +1,116 @@
+h1,a,ul,li{
+	margin: 0;
+	padding: 0;
+}
+a:hover{
+	color: #df3028;
+}
+.mg-b{
+	/*position: relative;*/
+	/*111111111111111111111*/
+}
+.mg-main{
+	position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 1190px;
+}
+.mg-title{
+	position: relative;
+    margin: 10px 0 0 170px;
+}
+.mg-title h3{
+	font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    padding: 10px 12px;
+    background-color: #fafafa;
+}
+.mg-com{
+	padding: 10px;
+    background-color: #fff;
+    margin: 0 0 0 170px;
+}
+.form-list{
+	margin-top: 30px;
+}
+.control-group{
+	margin-bottom: 20px;
+	line-height: 26px;
+}
+.control-group label{
+	float: left;
+    width: 194px;
+    text-align: right;
+    line-height: 26px;
+    color: #666;
+}
+.control-group label em{
+	color: #f00;
+}
+.inp input{
+	width: 140px;
+    height: 18px;
+    padding: 3px 5px;
+    border: 1px solid #bbb;
+    line-height: 18px;
+}
+
+/*性别*/
+label {
+    cursor: default;
+}
+.controls {
+    position: relative;
+    float: left;
+}
+.controls .sex-label input {
+    float: left;
+    margin-top: 7px;
+}
+.controls .sex-label span {
+    float: left;
+    margin: 5px 20px 0 5px;
+    line-height: 1.4;
+    color: #333;
+    font-family: Simsun;
+    font-size: 12px;
+}
+.clearfix:after {
+    content: ".";
+}
+.clearfix:after, .footer-dom {
+    visibility: hidden;
+}
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+}
+.sex-label{
+	float: left;
+}
+.citySelect {
+    position: relative;
+    z-index: 99;
+    height: 30px;
+    line-height: 30px;
+}
+.control-label {
+    float: left;
+    width: 194px;
+    text-align: right;
+    line-height: 26px;
+    color: #666;
+}
+.mg-stand-btn1 {
+    width: 77px;
+    height: 30px;
+    display: inline-block;
+    background: #F90;
+    border-radius: 3px;
+    font: 14px/30px "Microsoft Yahei";
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}

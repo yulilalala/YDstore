@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人注册</title>
+    <link rel="import" href="index.html">
+    <link rel="stylesheet" href="../css/base.css">
+    <!--    normalize.css里面做css初始化 正对浏览器-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
+</head>
+
+<body>
+    <div class="w register_header">
+        <div class="h_logo">
+            <h1><a href="index.html">亿点商城</a></h1>
+        </div>
+        <div class="register_text">欢迎注册</div>
+        <a href="login.html">我已经注册，马上登陆 ></a>
+    </div>
+    <div class="w register_mid">
+        <div class="phone_form">
+            <div class=" form_phone">
+                <div class="input_box">
+                    <div class="des_text">手机号码</div>
+                    <input id="user_phone" name="user_phone" type="text" placeholder="请输入手机号" maxlength="11">
+                </div>
+                <div id="aliasTip" class="error_msg hide" style="display: none;">格式不正确，请您输入正确的手机号。</div>
+            </div>
+            <div class="form_yzm">
+                <div class="input_box">
+                    <div class="des_text">手机验证码</div>
+                    <input id="code" name="code" type="text" placeholder="请输入手机验证码">
+                    <div class="yzm_re">获取短信验证码</div>
+                </div>
+                <div id="smsCodeTip" class="error_msg hide" style="height: 34px; line-height: 34px; margin-top: 0px; overflow: hidden; display: none;">
+
+                </div>
+            </div>
+            <div class="form_setpws">
+                <div class="input_box" style="margin-bottom: 0;">
+                    <div class="des_text">设置密码</div>
+                    <input id="user_password" name="user_password" type="text" placeholder="请输入密码" />
+                </div>
+                <div style="height:50px;">
+                        <div id="setPswTip" class="error-msg hide" style="margin:0;"></div>
+                        <div class="suggestion hide">
+                            <em>6-20个字符，由字母，数字和符号的两种以上组合。</em>
+                            <a id="pswSuggestion" href="javascript:void(0)" name="Preg_index_none_password">密码设置建议</a>
+                        </div>
+                        <div id="setPsw_rank" class="security-level clearfix hide">
+                            <span>安全程度：</span>
+                            <span class="level level1">低</span>
+                            <span class="level level2">中</span>
+                            <span class="level level3">高</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="items">
+		        <input type="checkbox" id="protocol" checked="checked" class="accept-items" name="Preg_index_none_check">
+		        <a href="/memberRegu.do" target="_blank" name="Preg_index_none_hyzc">《会员章程》</a><a href="/eppAggrement.do" target="_blank" name="Preg_index_none_yfb">《易付宝协议》</a>及<a href="">《广告联盟在线协议》</a>
+    		</div>
+            <a href="javascript:void(0);" id="save" class="submit_btn" name="Preg_index_none_submit">提交注册</a>
+        </div>
+    </div>
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+
+        //     从 warning.html 的文档中获取 DOM。
+        var el = content.querySelector('.copyright');
+
+        document.body.appendChild(el.cloneNode(true));
+
+    </script>
+</body>
+
+</html>

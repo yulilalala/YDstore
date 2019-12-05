@@ -1,0 +1,5 @@
+CREATE TABLE `goodstype` (
+  `goodstype_id` int(11) NOT NULL auto_increment,
+  `goodstype_name` varchar(50) NOT NULL default '',
+  PRIMARY KEY  (`goodstype_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

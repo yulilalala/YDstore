@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Curelation" table="curelation">
+		<id name="curelation_id" column="curelation_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="user_id"></property>
+		<property name="coupon_id"></property>
+		<property name="curelation_time"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="domain.Member" table="member">
+		<id name="member_id" column="member_id">
+			<generator class="native"/>
+		</id>
+		<property name="member_grade"></property>
+		<property name="member_jifen"></property>
+		<property name="member_remain"></property>
+		<many-to-one name="user" class="domain.User" column="user_id" unique="true"></many-to-one>
+	</class>
+</hibernate-mapping>
